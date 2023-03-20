@@ -41,11 +41,11 @@
     - These requests do not require a web browser.
     - Requests can be examined, replicated, and saved.
 - Hello World With Scrapy: 
-    1. Install scrapy using 'pip instal scrapy'
-    2. run 'scrapy start project [name of the folder] '. 
-    3. Navigate to 'spiders'
-    4. run 'scrapy genspider ietf pythonscraping.com'.
-    5. run 'scrapy runspider ietf.py'
+    1. Install scrapy using `pip instal scrapy`
+    2. run `scrapy start project [name of the folder] `. 
+    3. Navigate to `spiders`
+    4. run `scrapy genspider ietf pythonscraping.com`.
+    5. run `scrapy runspider ietf.py`
 - Challenge:
     - CSS selectors or xpath selectors.
     - //h1
