@@ -1,6 +1,7 @@
 # Web Scraping with Python
-# [*Course Certificate*]()
-
+# [*Course Certificate*](https://www.linkedin.com/learning/certificates/4a8188238fb768e3bd903b9aed275e602a05556b8c945d26b8bcccc34d724d31)
+ ---
+ 
 ### [1] Basics of Web Scraping:
 - What is Web Scraping: 
 - known as Screen Scraping, Web Harvesting, Web Crawling, Spiders, Bot. 
@@ -55,7 +56,49 @@
     - /@id
     - @content: to get the value.
 ### [2] Learning to Crawl:
+- Crawling a website: 
+> Wikipedia crawling. 
+`\PythonWebScraping_Linkedin\article_scraper\article_scraper\spiders\wikipedia.py`
+- Recording Data. 
+    - Go to `items.py`
+    - Item is type of content you are scraping.
+    - Wikipedia is a source. 
+    - To run the file: `scrapy runspider wikipedia.py -o article.csv -t csv -s CLOSESPIDER_PAGECOUNT=10`
+        - `-s` stands for settings. 
+    - To List all `cat articles.csv`
+    - > you can have the file with `.json` or `.xml`
+- Scrapy Settings File: 
+    - You can add any custome settings to the `settings.py`
+- Structure your scrapers for resusablility: 
+    - `pipeline.py`.
+- Challenge: 
+    - scrape different data from different websites. 
 
 ### [3] Advanced Techniques:
+- Submitting a form: 
+    - https requests: GET, POST
+    - `from scrapy.http import FormRequest`
+- Finding and Using hidden APIs. 
+- Siteemaps and robots.txt:
+    - A text to any scraper of what they should and should not scrape from a website and it appears with any website.
+    - To be able to follow the robots.txt rules **Automatically** activate the `ROBOTSTXT_OBEY = True` in `settings.py` of the project. 
+- Challenge: 
+    - Use CNN's sitemap and scrape data to database. 
+    - Sitemap = `index.html`
+    - Quick scraping. 
 ### [4] Acting Human:
+- Logging in: 
+    - `login.html`
+- Browser automation with Selenium: 
+    - First install scrapy-selenium library => `pip install scrapy-selenium`.
+    - Second download browser driver file: https://chromedriver.chromium.org/downloads 
+    - Then move this file somewhere memorable
+- Interacting with a page: 
+    - Use selenium functions. 
 ### [5] Conclusion:
+- Check out: 
+    1. [Python Automation and Testing](https://www.linkedin.com/learning/python-automation-and-testing) for more information about selenium. 
+    2. [MySql Essential Training](https://www.linkedin.com/learning/mysql-essential-training-2)
+    3. [Python Data Analysis](https://www.linkedin.com/learning/python-data-analysis-2)
+    4. Web Scraping with Python book by Ryan Mitchell. 
+    4. [Web Scraping With Python](https://www.linkedin.com/learning/web-scraping-with-python)
